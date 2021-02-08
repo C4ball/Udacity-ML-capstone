@@ -89,11 +89,11 @@ The best HyperDrive model obtained 98.255% accuracy, trained with logistic regre
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
 
-###### Screenshot 1: Hyperdrive RunDetails
+###### Screenshot 3: Hyperdrive RunDetails
 ![RunDetais_AutoML](.//step_2/3_RunDetais_Hyperdrive.png)	
 
 
-###### Screenshot 2: Best Hyperdrive Model
+###### Screenshot 4: Best Hyperdrive Model
 ![RunDetais_AutoML](.//step_2/4_Best_model_RunID_Hyperdrive.png)	
 
 
@@ -104,6 +104,19 @@ HyperDrive’s best model accuracy = 98.255%
 AutoML’s best model accuracy = 99.832%
 
 The model with the best accuracy is deployped as per the instructions, so the AutoML's best model is deployed.
+
+Initially, the best model is registered and it's necessary files are downloaded. Then the Environment and inference is created with the help of required conda dependencies and score.py script file which has the intialization and exit function defined for the best model and the model is deployed with ACI(Azure Container Instance) and configurations such as cpu_cores=1, memory_gb=1.
+
+###### Screenshot 5: Model Registration
+![RunDetais_AutoML](.//step_2/5_Model_Registration.png)	
+
+
+###### Screenshot 6: Model Deployment
+![RunDetais_AutoML](.//step_2/6_Model_Deployment.png)	
+
+
+###### Screenshot 6: Model Endpoint Active
+![RunDetais_AutoML](.//step_2/7_Model_Endpoint_Active.png)	
 
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
