@@ -1,0 +1,48 @@
+2021-02-08T16:21:54,305656700+00:00 - gunicorn/run 
+2021-02-08T16:21:54,307644500+00:00 - rsyslog/run 
+2021-02-08T16:21:54,333748800+00:00 - iot-server/run 
+rsyslogd: /azureml-envs/azureml_7785023fceb74e4facc1b1a577b1faf9/lib/libuuid.so.1: no version information available (required by rsyslogd)
+2021-02-08T16:21:54,386133100+00:00 - nginx/run 
+/usr/sbin/nginx: /azureml-envs/azureml_7785023fceb74e4facc1b1a577b1faf9/lib/libcrypto.so.1.0.0: no version information available (required by /usr/sbin/nginx)
+/usr/sbin/nginx: /azureml-envs/azureml_7785023fceb74e4facc1b1a577b1faf9/lib/libcrypto.so.1.0.0: no version information available (required by /usr/sbin/nginx)
+/usr/sbin/nginx: /azureml-envs/azureml_7785023fceb74e4facc1b1a577b1faf9/lib/libssl.so.1.0.0: no version information available (required by /usr/sbin/nginx)
+/usr/sbin/nginx: /azureml-envs/azureml_7785023fceb74e4facc1b1a577b1faf9/lib/libssl.so.1.0.0: no version information available (required by /usr/sbin/nginx)
+/usr/sbin/nginx: /azureml-envs/azureml_7785023fceb74e4facc1b1a577b1faf9/lib/libssl.so.1.0.0: no version information available (required by /usr/sbin/nginx)
+EdgeHubConnectionString and IOTEDGE_IOTHUBHOSTNAME are not set. Exiting...
+2021-02-08T16:21:56,005690600+00:00 - iot-server/finish 1 0
+2021-02-08T16:21:56,009697000+00:00 - Exit code 1 is normal. Not restarting iot-server.
+Starting gunicorn 19.9.0
+Listening at: http://127.0.0.1:31311 (70)
+Using worker: sync
+worker timeout is set to 300
+Booting worker with pid: 105
+SPARK_HOME not set. Skipping PySpark Initialization.
+Generating new fontManager, this may take some time...
+Initializing logger
+2021-02-08 16:22:07,040 | root | INFO | Starting up app insights client
+2021-02-08 16:22:07,041 | root | INFO | Starting up request id generator
+2021-02-08 16:22:07,041 | root | INFO | Starting up app insight hooks
+2021-02-08 16:22:07,042 | root | INFO | Invoking user's init function
+2021-02-08 16:22:13,265 | root | INFO | Users's init has completed successfully
+/azureml-envs/azureml_7785023fceb74e4facc1b1a577b1faf9/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+2021-02-08 16:22:13,274 | root | INFO | Skipping middleware: dbg_model_info as it's not enabled.
+2021-02-08 16:22:13,283 | root | INFO | Skipping middleware: dbg_resource_usage as it's not enabled.
+2021-02-08 16:22:13,288 | root | INFO | Scoring timeout is found from os.environ: 60000 ms
+2021-02-08 16:22:27,706 | root | INFO | Swagger file not present
+2021-02-08 16:22:27,707 | root | INFO | 404
+127.0.0.1 - - [08/Feb/2021:16:22:27 +0000] "GET /swagger.json HTTP/1.0" 404 19 "-" "Go-http-client/1.1"
+2021-02-08 16:25:56,400 | root | INFO | Swagger file not present
+2021-02-08 16:25:56,400 | root | INFO | 404
+127.0.0.1 - - [08/Feb/2021:16:25:56 +0000] "GET /swagger.json HTTP/1.0" 404 19 "-" "Go-http-client/1.1"
+2021-02-08 16:26:10,998 | root | INFO | Swagger file not present
+2021-02-08 16:26:10,998 | root | INFO | 404
+127.0.0.1 - - [08/Feb/2021:16:26:10 +0000] "GET /swagger.json HTTP/1.0" 404 19 "-" "Go-http-client/1.1"
+2021-02-08 16:26:37,643 | root | INFO | Validation Request Content-Type
+2021-02-08 16:26:37,644 | root | INFO | Scoring Timer is set to 60.0 seconds
+2021-02-08 16:26:37,728 | root | INFO | 200
+127.0.0.1 - - [08/Feb/2021:16:26:37 +0000] "POST /score HTTP/1.0" 200 25 "-" "python-requests/2.25.1"
+2021-02-08 16:26:37,748 | root | INFO | Validation Request Content-Type
+2021-02-08 16:26:37,748 | root | INFO | Scoring Timer is set to 60.0 seconds
+2021-02-08 16:26:37,837 | root | INFO | 200
+127.0.0.1 - - [08/Feb/2021:16:26:37 +0000] "POST /score HTTP/1.0" 200 25 "-" "python-requests/2.25.1"
