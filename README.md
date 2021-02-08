@@ -49,11 +49,11 @@ AutoMLConfig is then defined for successfully executing the AutoML run with auto
 The best AutoML model obtained an accuracy of 99.832%, which may indicate an overfitted result, but considering that it is based on a software decision and the Best Hyperdrive model obtained an accuracy of 98.255%, we can assume that the AutoML model has a good result. To improve this process, we could use a cross-validation technique or adding a validation dataset not to improve our result but to make sure the model is not overfitted. 
 
 ###### Screenshot 1: AutoML RunDetails
-![RunDetais_AutoML](.//step_2/1_RunDetais_AutoML.png)	
+![AutoML RunDetails](.//step_2/1_RunDetais_AutoML.png)	
 
 
 ###### Screenshot 2: Best AutoML Model
-![RunDetais_AutoML](.//step_2/2_Best_model_RunID_AutoML.png)	
+![Best AutoML Model](.//step_2/2_Best_model_RunID_AutoML.png)	
 
 
 ## Hyperparameter Tuning
@@ -90,11 +90,11 @@ The best HyperDrive model obtained 98.255% accuracy, trained with logistic regre
 
 
 ###### Screenshot 3: Hyperdrive RunDetails
-![RunDetais_AutoML](.//step_2/3_RunDetais_Hyperdrive.png)	
+![Hyperdrive RunDetails](.//step_2/3_RunDetais_Hyperdrive.png)	
 
 
 ###### Screenshot 4: Best Hyperdrive Model
-![RunDetais_AutoML](.//step_2/4_Best_model_RunID_Hyperdrive.png)	
+![Best Hyperdrive Model](.//step_2/4_Best_model_RunID_Hyperdrive.png)	
 
 
 ## Model Deployment
@@ -108,15 +108,19 @@ The model with the best accuracy is deployped as per the instructions, so the Au
 Initially, the best model is registered and it's necessary files are downloaded. Then the Environment and inference is created with the help of required conda dependencies and score.py script file which has the intialization and exit function defined for the best model and the model is deployed with ACI(Azure Container Instance) and configurations such as cpu_cores=1, memory_gb=1.
 
 ###### Screenshot 5: Model Registration
-![RunDetais_AutoML](.//step_2/5_Model_Registration.png)	
+![Model Registration](.//step_2/5_Model_Registration.png)	
 
 
 ###### Screenshot 6: Model Deployment
-![RunDetais_AutoML](.//step_2/6_Model_Deployment.png)	
+![Model Deployment](.//step_2/6_Model_Deployment.png)	
 
 
-###### Screenshot 6: Model Endpoint Active
-![RunDetais_AutoML](.//step_2/7_Model_Endpoint_Active.png)	
+###### Screenshot 7: Model Endpoint Active
+![Model Endpoint Active](.//step_2/7_Model_Endpoint_Active.png)	
+
+###### Screenshot 8: Testing the Model Endpoint
+![Testing the model](.//step_2/8_Testing_the_Model_Endpoint_Active.png)	
+
 
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
@@ -128,3 +132,10 @@ Initially, the best model is registered and it's necessary files are downloaded.
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+
+## Proof of cluster clean up
+The cluster is selected and then deleted with the help of option avaliable in Compute tab.
+
+###### Screenshot 9: Deleting the cluster
+![Deleting the cluster](.//step_2/9_Proof_of_deleting_cluster.png)
