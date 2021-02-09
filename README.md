@@ -122,7 +122,6 @@ Initially, the best model is registered and it's necessary files are downloaded.
 ![Testing the model](.//step_2/8_Testing_the_Model_Endpoint_Active.png)	
 
 
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
