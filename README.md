@@ -124,17 +124,12 @@ Initially, the best model is registered and it's necessary files are downloaded.
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+[Click Here](https://youtu.be/GgT0WLTDp7Y)
 
 
 ## Proof of cluster clean up
 The cluster is selected and then deleted with the help of option avaliable in Compute tab.
 
 ###### Screenshot 9: Deleting the cluster
-![Deleting the cluster](.//step_2/9_Proof_of_deleting_cluster.png)
+![Deleting the cluster](.//step_2/10_Proof_of_deleting_cluster.png)
